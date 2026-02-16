@@ -4,9 +4,10 @@ import { TehilimStats } from '../types';
 
 interface StatsGridProps {
   stats: TehilimStats;
+  completedBooks: number;
 }
 
-export function StatsGrid({ stats }: StatsGridProps) {
+export function StatsGrid({ stats, completedBooks }: StatsGridProps) {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
       <StatCard
@@ -30,7 +31,7 @@ export function StatsGrid({ stats }: StatsGridProps) {
       <StatCard
         icon={Trophy}
         label="ספרים שהושלמו"
-        value={0}
+        value={completedBooks}
         theme="purple"
       />
     </div>

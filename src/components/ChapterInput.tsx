@@ -55,7 +55,7 @@ export function ChapterInput({ onSelect, onHide, statuses }: ChapterInputProps) 
   };
 
   return (
-    <div className="relative pt-4 max-w-xs mx-auto" style={{ animation: 'fadeIn 0.3s ease-in-out' }}>
+    <div className="relative pt-4 max-w-xs mx-auto animate-fadeIn">
       {isOpen && (
         <>
           <div
@@ -82,7 +82,7 @@ export function ChapterInput({ onSelect, onHide, statuses }: ChapterInputProps) 
                     onClick={() => handleSelect(chapter.number)}
                     className="w-full px-4 py-2.5 text-right hover:bg-stone-50 transition-colors text-stone-700"
                   >
-{chapter.name}
+                    {chapter.name}
                   </button>
                 ))
               )}

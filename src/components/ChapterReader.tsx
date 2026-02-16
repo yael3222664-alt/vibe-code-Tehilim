@@ -39,8 +39,7 @@ export function ChapterReader({ chapter, onComplete }: ChapterReaderProps) {
           {chapter.verses.map((verse, index) => (
             <p
               key={index}
-              className="text-lg md:text-xl leading-loose text-stone-700 mb-4 last:mb-0"
-              style={{ fontFamily: 'serif', lineHeight: '2' }}
+              className="text-lg md:text-xl text-stone-700 mb-4 last:mb-0 font-serif leading-[2]"
             >
               {verse}
             </p>
